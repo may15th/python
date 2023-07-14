@@ -78,6 +78,141 @@ a = [1,2,3,['a','b','c'],4,5]
 print(a[2:5])
 print(a[3][:2])
 
- a= [1,2,3]
- b=
 # 2-3 리스트 자료형
+
+# 2-5 딕셔너리 자료형
+a = {'김연아':'피겨스케이팅', '박찬호':'야구', '고유한':'코딩'}
+b=a['고유한']
+print(b)
+
+grade = {'pey': 10, 'juliet': 90}
+print(grade['pey'])
+print(grade['juliet'])
+
+dic = {'name':'pey', 'phone': '010-9999-1234', 'birth': '118'}
+b= dic['name']
+c= dic['phone']
+d= dic['birth']
+print(b,c,d)
+
+a ={'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
+b = list(a.keys())
+print(b)
+
+s1 = set([1,2,3])
+li = list(s1)
+print(li)
+
+t1 = list(s1)
+print(t1, t1[0])
+
+s1 = set([1,2,3,4,5,6])
+s2 = set([4,5,6,7,8,9])
+
+print(s1&s2)
+print(s1.intersection(s2))
+
+print(s1|s2)
+
+print(s1-s2)
+print(s1.difference(s2))
+
+s1 = set([1,2,3])
+s1.add(4)
+print(s1)
+
+s1 = set([1,2,3])
+s1.update([4,5,6])
+print(s1)
+
+s1.remove(2)
+print(s1)
+
+print(s1.remove(3))
+# 왜 안되지?
+
+# 3. 프로그램 구조를 쌓아보자! 제어문
+
+
+a = [1,2,3,4]
+while a:
+    print(a.pop())
+
+if [1,2,3]:
+    print("참")
+else:
+    print("거짓")
+
+pocket = ['paper', 'cellphone', 'money']
+if 'money' in pocket:
+    print("택치를 타고 가라")
+else:
+    print("걸어가라")
+
+if 'money' in pocket:
+    pass
+else:
+    print("카드를 꺼내라")
+
+if 'money' in pocket: print(("코딩왕"))
+else: print("카드를 꺼내라")
+
+pocket = 'paper', 'cellphone', 'money'
+if 'money' in pocket: print("찐천재")
+else: print("바보")
+
+treeHit= 0
+while treeHit < 10:
+    treeHit = treeHit +1
+    print("나무를 %d번 찍었습니다." % treeHit)
+    if treeHit == 10:
+        print("나무 넘어갑니다.")
+prompt = """
+    1. Add
+    2. Del
+    3. List
+    4. Quit
+
+    Enter number: """
+# number = 0
+# while number != 4:
+#     print(prompt)
+#     number = int(input())
+
+coffee = 10
+money = 300
+while money:
+    print("돈을 받았으니 커피를 줍니다.")
+    coffee = coffee -1
+    print("남은 커피의 양은 %d개입니다." % coffee)
+    if coffee == 0:
+        print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
+        break
+
+happy = int(input("얼마나 행복하신가요? 0~10: "))
+notice = "그만 두고 싶으시면 11입력 하세요"
+
+if happy > 10:
+    print("10 이하의 값을 입력해 주세요")
+elif 7 <= happy <=10:
+    print("당신이 행복하니 저도 행복해요.")
+elif 4 <= happy <7:
+    print("힘내세요")
+elif 0 <= happy <4:
+    print('ㅠㅠ같이 울어줄게요.')
+
+coffee = 10
+while True:
+    money = int(input("돈을 넣어 주세요: "))
+    if money == 300:
+        print("커피를 줍니다.")
+        coffee = coffee -1
+    elif money > 300:
+        print("거스름돈 %d를 주고 커피를 줍니다." % (money-300))
+        coffee = coffee -1
+    else:
+        print("돈을 돌려주고 커피를 주지 않습니다.")
+        print("남은 커피의 양은 %d개 입니다." % coffee)
+    if coffee == 0:
+        print("커피가 다 떨어졌습니다. 판매를 중지 합니다.")
+        break
