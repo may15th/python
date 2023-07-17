@@ -303,4 +303,29 @@ print(add2)
 
 marks = [90,25,67,45,80]
 for number in range(len(marks)):
-    if marks
+    if marks[number] < 60:
+        continue
+    print("%d번 학생 축하합니다. 합격입니다." %(number+1))
+    
+    
+for i in range(2,10):
+    for j in range(1,10):
+        print(i*j, end=" ")
+    print('')
+    
+    
+a = [1,2,3,4]
+result = []
+for num in a:
+    result.appen(num*3)
+    
+# print(result)
+
+# >>> a = [1,2,3,4]
+# >>> result = [num * 3 for num in a if num % 2 == 0]
+# >>> print(result)
+# [6, 12]
+# 리스트 컴프리헨션의 문법은 다음과 같다. ‘if 조건문’ 부분은 앞의 예제에서 볼 수 있듯이 생략할 수 있다.
+
+# [표현식 for 항목 in 반복_가능_객체 if 조건문]
+

@@ -1,0 +1,52 @@
+# def add(a,b):
+#     return a+b
+
+# a=3
+# b=4
+# c= add(a,b)
+# print(c)
+
+def add(a, b):
+    result = a+b
+    return result
+
+a = add(3,4)
+print(a)
+
+def say():
+    result = 'hi'
+    return result
+
+a=say()
+print(a)
+
+
+def add(a,b):
+    print("%d, %d의 합은 %d입니다." % (a,b,a+b))
+    
+add(3,4)
+
+def sub(a, b):
+    return a-b
+
+result = sub(b=3, a=7)
+print(result)
+
+def add_many(*args):
+    result = 0
+    for i in args:
+        result = result + i
+    return result
+
+result = add_many(1,2,3)
+print(result)
+
+print('Hello World')
+
+a,b = map(int, input().split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)
+print(a%b)
+
