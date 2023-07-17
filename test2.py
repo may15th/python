@@ -134,85 +134,173 @@ print(s1.remove(3))
 # 3. 프로그램 구조를 쌓아보자! 제어문
 
 
-a = [1,2,3,4]
-while a:
-    print(a.pop())
+# a = [1,2,3,4]
+# while a:
+#     print(a.pop())
 
-if [1,2,3]:
-    print("참")
-else:
-    print("거짓")
+# if [1,2,3]:
+#     print("참")
+# else:
+#     print("거짓")
 
-pocket = ['paper', 'cellphone', 'money']
-if 'money' in pocket:
-    print("택치를 타고 가라")
-else:
-    print("걸어가라")
+# pocket = ['paper', 'cellphone', 'money']
+# if 'money' in pocket:
+#     print("택치를 타고 가라")
+# else:
+#     print("걸어가라")
 
-if 'money' in pocket:
-    pass
-else:
-    print("카드를 꺼내라")
+# if 'money' in pocket:
+#     pass
+# else:
+#     print("카드를 꺼내라")
 
-if 'money' in pocket: print(("코딩왕"))
-else: print("카드를 꺼내라")
+# if 'money' in pocket: print(("코딩왕"))
+# else: print("카드를 꺼내라")
 
-pocket = 'paper', 'cellphone', 'money'
-if 'money' in pocket: print("찐천재")
-else: print("바보")
+# pocket = 'paper', 'cellphone', 'money'
+# if 'money' in pocket: print("찐천재")
+# else: print("바보")
 
-treeHit= 0
-while treeHit < 10:
-    treeHit = treeHit +1
-    print("나무를 %d번 찍었습니다." % treeHit)
-    if treeHit == 10:
-        print("나무 넘어갑니다.")
-prompt = """
-    1. Add
-    2. Del
-    3. List
-    4. Quit
+# treeHit= 0
+# while treeHit < 10:
+#     treeHit = treeHit +1
+#     print("나무를 %d번 찍었습니다." % treeHit)
+#     if treeHit == 10:
+#         print("나무 넘어갑니다.")
+# prompt = """
+#     1. Add
+#     2. Del
+#     3. List
+#     4. Quit
 
-    Enter number: """
-# number = 0
-# while number != 4:
-#     print(prompt)
-#     number = int(input())
+#     Enter number: """
+# # number = 0
+# # while number != 4:
+# #     print(prompt)
+# #     number = int(input())
 
-coffee = 10
-money = 300
-while money:
-    print("돈을 받았으니 커피를 줍니다.")
-    coffee = coffee -1
-    print("남은 커피의 양은 %d개입니다." % coffee)
-    if coffee == 0:
-        print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
-        break
+# coffee = 10
+# money = 300
+# while money:
+#     print("돈을 받았으니 커피를 줍니다.")
+#     coffee = coffee -1
+#     print("남은 커피의 양은 %d개입니다." % coffee)
+#     if coffee == 0:
+#         print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
+#         break
 
-happy = int(input("얼마나 행복하신가요? 0~10: "))
-notice = "그만 두고 싶으시면 11입력 하세요"
+# happy = int(input("얼마나 행복하신가요? 0~10: "))
+# notice = "그만 두고 싶으시면 11입력 하세요"
 
-if happy > 10:
-    print("10 이하의 값을 입력해 주세요")
-elif 7 <= happy <=10:
-    print("당신이 행복하니 저도 행복해요.")
-elif 4 <= happy <7:
-    print("힘내세요")
-elif 0 <= happy <4:
-    print('ㅠㅠ같이 울어줄게요.')
+# if happy > 10:
+#     print("10 이하의 값을 입력해 주세요")
+# elif 7 <= happy <=10:
+#     print("당신이 행복하니 저도 행복해요.")
+# elif 4 <= happy <7:
+#     print("힘내세요")
+# elif 0 <= happy <4:
+#     print('ㅠㅠ같이 울어줄게요.')
 
-coffee = 10
-while True:
-    money = int(input("돈을 넣어 주세요: "))
-    if money == 300:
-        print("커피를 줍니다.")
-        coffee = coffee -1
-    elif money > 300:
-        print("거스름돈 %d를 주고 커피를 줍니다." % (money-300))
-        coffee = coffee -1
+# coffee = 10
+# while True:
+#     money = int(input("돈을 넣어 주세요: "))
+#     if money == 300:
+#         print("커피를 줍니다.")
+#         coffee = coffee -1
+#     elif money > 300:
+#         print("거스름돈 %d를 주고 커피를 줍니다." % (money-300))
+#         coffee = coffee -1
+#     else:
+#         print("돈을 돌려주고 커피를 주지 않습니다.")
+#         print("남은 커피의 양은 %d개 입니다." % coffee)
+#     if coffee == 0:
+#         print("커피가 다 떨어졌습니다. 판매를 중지 합니다.")
+#         break
+
+
+# coffee = 10
+# money = 300
+# while money:
+#     print("돈을 받았으니 커피를 줍니다.")
+#     coffee = coffee - 1
+#     print("남은 커피의 양은 %d개입니다" %coffee)
+#     if coffee == 0:
+#         print("커피가 다 떨어졌습니다. 판맬르 중지합니다.")
+#         break
+
+
+#coffee.py
+# coffee = 10
+# while True:
+#     money = int(input("돈을 넣어 주세요: "))
+#     if money == 300:
+#         print("커피를 줍니다. ")
+#         coffee = coffee - 1
+#     # 아래 구문 money-300이 정수형으로 안불려오는 이유 확인.
+#     elif money > 300:
+#         print("거스름돈 %d를 주고 커피를 줍니다." %(money-300))
+#     else:
+#         print("돈을 다시 돌려주고 커피를 주지 않습니다.")
+#         print("남은 커피의 양은 %개 입니다." %coffee)
+#     if coffee == 0:
+#         print("커피가 다 떨어졌습니다. 판매를 중지 합니다.")
+#         break
+
+a = 0
+while a < 10:
+    a = a+1
+    if a % 2 ==0:
+        continue
+    print(a)
+        
+# while True:
+#     print("Ctrl+C를 눌러야 while문을 빠져나갈 수 있습니다.")
+#     try:
+#         input()
+#     except KeyboardInterrupt:
+#         break
+    
+#전형적인 for문
+test_list = ['one', 'two', 'three']
+for i in test_list:
+    print(i)
+
+a = [(1,2), (3,4), (5,6)]
+for (first, last) in a:
+    print(first+last)
+
+
+marks = [90, 25, 67, 45, 80]
+number = 0
+for mark in marks:
+    number = number + 1
+    if mark >= 60:
+        print("%d번 학생은 합격입니다." %number)
     else:
-        print("돈을 돌려주고 커피를 주지 않습니다.")
-        print("남은 커피의 양은 %d개 입니다." % coffee)
-    if coffee == 0:
-        print("커피가 다 떨어졌습니다. 판매를 중지 합니다.")
-        break
+        print("%d번 학생은 불합격입니다." %number)
+
+marks = [90,25,67,45,80]
+
+number = 0
+for mark in marks:
+    number = number + 1
+    if mark < 60:
+        continue
+    print("%d번 학생 축하합니다. 합격입니다." %number)
+
+a= range(10)
+
+#range 함수의 예시
+
+add = 0
+add2 = 0
+for i in range(1,11):
+    add = add +i
+for i in range(11):
+    add2 = add2 + i
+print(add)
+print(add2)
+
+marks = [90,25,67,45,80]
+for number in range(len(marks)):
+    if marks
